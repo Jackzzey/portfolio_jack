@@ -28,12 +28,27 @@ function Navbar() {
     )}>
 
       <div className="container flex items-center justify-between">
-        <a href="" className="text-xl font-bold text-primary flex items-center">
-          <span className="relative z-50">
+        <a href="#hero" className="text-xl font-bold text-primary flex items-center">
+          <span  className="relative z-50">
             <span className="text-glow text-foreground"> Jacks</span> Portfolio
           </span>
           
         </a>
+
+        {/* destop version */}
+        <div className="hidden md:flex space-x-8">
+          {navitems.map((item,key) => (
+            <a 
+            className="text-foreground/80 hover:text-primary transition-colors duration-300"
+            key={key} 
+            href={item.href} 
+            >{item.name}</a>
+          ))}
+        </div>
+        
+
+        {/* mobile version */}
+
       </div>
 
 
