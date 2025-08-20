@@ -8,7 +8,7 @@ const navitems = [
   {name: "Skills", href: "#skills"},
   {name: "Projects", href: "#projects"},
   {name: "About", href: "#about"},
-  {name: "contact", href: "#contact"},
+  {name: "Contact", href: "#contact"},
 ]
 
 function Navbar() {
@@ -38,11 +38,11 @@ function Navbar() {
         </a>
 
         {/* desktop version */}
-        <div className="hidden md:flex space-x-8 absolute left-0">
+        <div className="hidden md:flex flex-row items-center space-x-10 absolute left-1/4 translate-x-1/2">
           {navitems.map((item, key) => (
             <a
               className={cn(
-                "flex flex-col items-left text-foreground/80 hover:text-primary transition-colors duration-300"
+                "flex flex-col items-left text-foreground-4xl hover:text-primary transition-colors duration-300"
               )}
               key={key}
               href={item.href}
