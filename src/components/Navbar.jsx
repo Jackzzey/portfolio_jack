@@ -5,9 +5,10 @@ import { useEffect, useState } from "react"
 
 const navitems = [
   {name: "Home", href: "#hero"},
-  {name: "Skills", href: "#skills"},
-  {name: "Projects", href: "#projects"},
   {name: "About", href: "#about"},
+  {name: "Projects", href: "#Projects"},
+  {name: "Frontend", href: "#frontend"},
+  {name: "Backend", href: "#Backend"},
   {name: "Contact", href: "#contact"},
 ]
 

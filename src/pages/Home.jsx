@@ -6,6 +6,7 @@ import Navbar from '../components/Navbar'
 import HeroSection from '../components/HeroSection'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
+import ProjectsSection from '../components/ProjectSection'
 
 function Home() {
   const [isMobile, setIsMobile] = useState(null)
@@ -34,9 +35,10 @@ function Home() {
       {isMobile ? <Lanyard /> : null}
       <main>
         <HeroSection />
+        <AboutMe />
+        <ProjectsSection />
         
       </main>
-      <AboutMe />
       <Skills />
       
       
