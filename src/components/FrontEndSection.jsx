@@ -1,5 +1,9 @@
+import { ArrowRight, ExternalLink, Github } from 'lucide-react'
 import ProjectCard from './ProjectCard'
 import GithubButton from './GithubButton'
+
+
+
 
 const projects = [
   {
@@ -31,33 +35,30 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
     building: false,
+
   }
 ]
 
-function ProjectsSection() {
+
+function FrontEndSection() {
   return (
-    <section id='projects'
-      className='py-24 px-4 relative'
-    >
+    <section id='frontend' className='py-24 px-4 relative'>
       <div className="container mx-auto max-w-5xl">
         <h2 className='text-3xl md:text-4xl font-bold mb-4 text-center'>
-          Featured <span className='text-primary'> Projects</span>
+          Front End <span className='text-primary'> Projects</span>
         </h2>
 
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto'>
-          Here are some of my recent projects. Each project showcases my skills in modern web development, 
-          focusing on clean design and efficient code. Explore the demos and source code to learn more 
-          about my work.
+          Explore a selection of my front-end projects, each crafted with modern technologies like React and TailwindCSS. These projects highlight my ability to build responsive, visually appealing interfaces and deliver seamless user experiences. Browse the demos and source code to see my approach to clean design and efficient development.
         </p>
 
         <ProjectCard projects={projects}/>
 
         <GithubButton href={"https://github.com/Jackzzey"}/>
 
-
       </div>
     </section>
   )
 }
 
-export default ProjectsSection
+export default FrontEndSection

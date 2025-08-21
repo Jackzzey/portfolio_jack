@@ -148,6 +148,14 @@
 
 }
 
+@utility building {
+  @apply bg-transparent h-80;
+  border: 20px solid;
+  border-image: repeating-linear-gradient(45deg, black 0 6px, #fde047 6px 12px) 10;
+  
+
+}
+
 @utility star {
   @apply absolute rounded-full bg-white;
   box-shadow: 0 0 10px 2px rgba(255,255,255,0.4)

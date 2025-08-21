@@ -1,6 +1,9 @@
 import ProjectCard from './ProjectCard'
 import GithubButton from './GithubButton'
 
+
+
+
 const projects = [
   {
     id: 1,
@@ -31,33 +34,30 @@ const projects = [
     demoUrl: "#",
     githubUrl: "#",
     building: false,
+
   }
 ]
 
-function ProjectsSection() {
+
+function BackEndSection() {
   return (
-    <section id='projects'
-      className='py-24 px-4 relative'
-    >
+    <section id='backend' className='py-24 px-4 relative'>
       <div className="container mx-auto max-w-5xl">
         <h2 className='text-3xl md:text-4xl font-bold mb-4 text-center'>
-          Featured <span className='text-primary'> Projects</span>
+          Back End <span className='text-primary'> Projects</span>
         </h2>
 
         <p className='text-center text-muted-foreground mb-12 max-w-2xl mx-auto'>
-          Here are some of my recent projects. Each project showcases my skills in modern web development, 
-          focusing on clean design and efficient code. Explore the demos and source code to learn more 
-          about my work.
+          Discover a selection of my backend projects, showcasing expertise in building robust APIs, server-side applications, and scalable systems. These projects demonstrate my skills in database management, authentication, and efficient data processing. Explore the demos and source code to see my approach to secure, maintainable, and high-performance backend development.
         </p>
 
         <ProjectCard projects={projects}/>
 
         <GithubButton href={"https://github.com/Jackzzey"}/>
 
-
       </div>
     </section>
   )
 }
 
-export default ProjectsSection
+export default BackEndSection

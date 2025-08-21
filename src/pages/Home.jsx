@@ -7,6 +7,8 @@ import HeroSection from '../components/HeroSection'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
 import ProjectsSection from '../components/ProjectSection'
+import FrontEndSection from '../components/FrontEndSection'
+import BackEndSection from '../components/BackEndSection'
 
 function Home() {
   const [isMobile, setIsMobile] = useState(null)
@@ -37,6 +39,8 @@ function Home() {
         <HeroSection />
         <AboutMe />
         <ProjectsSection />
+        <FrontEndSection />
+        <BackEndSection />
         
       </main>
       <Skills />
